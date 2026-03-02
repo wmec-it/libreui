@@ -1,6 +1,6 @@
 <div align="center">
   <picture>
-    <img src=".github/readme_assets/LibreUI_banner.svg" />
+    <img src=".github/readme_assets/LibreUI_Banner.svg" />
   </picture>
 </div>
 
