@@ -1,1 +1,48 @@
-#nav-bar { background-color: orange !important; }
+:root {
+    --navbar-background-image: url("https://aumiekjrpq.cloudimg.io/v7/_intoprodweb_/uploads/2023/08/femboy-pride-flag-1024x614.png");
+
+    --default-button-transition-duration: 100ms;
+}
+
+#nav-bar {
+    background-image: var(--navbar-background-image);
+    background-size: 100px;
+    background-position: center;
+
+}
+
+#nav-bar-customization-target>toolbarbutton>.toolbarbutton-icon,
+#nav-bar-customization-target>toolbaritem>toolbarbutton>.toolbarbutton-icon,
+#nav-bar-customization-target .toolbarbutton-badge-stack,
+#PanelUI-menu-button .toolbarbutton-badge-stack,
+#urlbar .urlbar-input-container,
+#urlbar-searchmode-switcher {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    transition: var(--default-button-transition-duration) ease-in-out background-color;
+    cursor: pointer;
+}
+
+#sidebar-button .toolbarbutton-icon {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    transition: var(--default-button-transition-duration) ease-in-out background-color;
+    cursor: pointer;
+}
+
+#nav-bar-customization-target>toolbarbutton:hover>.toolbarbutton-icon,
+#nav-bar-customization-target>toolbaritem:hover>.toolbarbutton-icon,
+#nav-bar-customization-target>toolbarbutton:hover>stack,
+#nav-bar-customization-target>toolbaritem:hover>stack,
+#nav-bar-customization-target>toolbarbutton:hover>box>toolbarbutton:hover>stack,
+#nav-bar-customization-target>toolbaritem:hover>box>toolbarbutton:hover>stack,
+#nav-bar-customization-target>toolbaritem:hover>toolbarbutton>.toolbarbutton-icon,
+#nav-bar-customization-target .toolbarbutton-badge-stack:hover,
+#PanelUI-menu-button:hover stack,
+#urlbar .urlbar-input-container {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+#urlbar-searchmode-switcher .searchmode-switcher-dropmarker {
+    background-color: none !important;
+}
