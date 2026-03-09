@@ -1,5 +1,7 @@
 @echo off
 
+REM Add input validation to ensure all required arguments are provided
+
 IF "%~1" == "" GOTO _MissingProfilePath
 IF "%~2" == "" GOTO _MissingPathToLink
 IF "%~3" == "" GOTO _MissingPathToTarget
